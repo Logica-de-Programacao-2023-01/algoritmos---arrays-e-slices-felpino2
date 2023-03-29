@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+	var array = [4]float64{2.2, 2.6, 2.9, 6.9}
+	fmt.Println("O array é ", array)
+	var produto float64
+	produto = 1
+	for _, numeros := range array {
+		produto *= numeros
+	}
+	fmt.Println("A multiplicação desses números é ", produto)
+}
