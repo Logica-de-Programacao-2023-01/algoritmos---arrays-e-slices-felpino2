@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+	var Array = [10]int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	var a, b int
+	fmt.Println("Qual número você quer ver se está na lista? ")
+	fmt.Scan(&a)
+	for {
+		b++
+		if a == Array[b] {
+			fmt.Println("Este número está no conjunto ")
+			break
+		} else if len(Array) > 9 {
+			fmt.Println("Este número não está no conjunto ")
+			break
+		}
+	}
+}
