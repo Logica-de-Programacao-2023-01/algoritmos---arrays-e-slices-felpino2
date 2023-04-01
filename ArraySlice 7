@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func main() {
+	var Slice = []int{0, 1, 2, 3, 4}
+	var a, b int
+	fmt.Println("Qual número você quer ver se está na lista? ")
+	fmt.Scan(&a)
+	for {
+		b++
+		if a == Slice[b] {
+			fmt.Println("Este número está no conjunto ")
+			break
+		} else if len(Slice) > 4 {
+			fmt.Println("Este número não está no conjunto ")
+			Slice = append(Slice, a)
+			fmt.Println("Agora está: ", Slice)
+			break
+		}
+	}
+}
