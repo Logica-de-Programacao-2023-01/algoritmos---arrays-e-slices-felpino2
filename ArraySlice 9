@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	var Array = [6]float64{}
+	var a float64
+	fmt.Println("O seu Array é ", Array, "que número você quer adicionar ao array? ")
+	fmt.Scan(&a)
+	Array[0] = a
+	Array[1] = a
+	Array[2] = a
+	Array[3] = a
+	Array[4] = a
+	Array[5] = a
+	fmt.Println(Array)
+}
