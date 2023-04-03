@@ -1,26 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	var Slice []int
-	var tamanho, b, soma int
-	fmt.Println("Informe o tamanho do slice: ")
-	fmt.Scan(&tamanho)
+	Conjunto := []int{}
+	var n, x, soma int
 
-	for {
-		if len(Slice) == tamanho {
-			break
-		}
-		fmt.Println("Adicione um valor a seu slice ")
-		fmt.Scan(&b)
-		Slice = append(Slice, b)
-	}
-	fmt.Println("Seu slice é ", Slice)
-	soma = 0
-	for _, numeros := range Slice {
-		soma += numeros
-	}
-	fmt.Println("E a soma é", soma)
+	fmt.Println("Qual o tamanho do slice? ")
+	fmt.Scan(&n)
 
+	for i := 0; i < n; i++ {
+		fmt.Println("Qual valor você quer colocar nessa posição? ")
+		fmt.Scan(&x)
+		Conjunto = append(Conjunto, x)
+		soma += Conjunto[i]
+	}
+	fmt.Println(Conjunto, soma)
 }
