@@ -11,3 +11,12 @@ func main() {
 	}
 	fmt.Println("A soma dos valores no array é ", soma)
 }
+ ou 
+ package main
+
+import "fmt"
+
+func main() {
+	Conjunto := [3]int{2, 4, 6}
+	fmt.Println("Soma é ", Conjunto[0]+Conjunto[1]+Conjunto[2])
+}
