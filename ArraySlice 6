@@ -3,16 +3,20 @@ package main
 import "fmt"
 
 func main() {
-	Conjunto := [10]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	Conjunto := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 	var n1 int
 	fmt.Println("Qual número você quer ver se está na lista? ")
 	fmt.Scan(&n1)
+	pertence := false
+
 	for i := 0; i < len(Conjunto); i++ {
-		if n1 == Conjunto[i] {
-			fmt.Println("Este número está no conjunto e está na posição ", Conjunto[i])
-			break
-		} else if i > 9 {
-			fmt.Println("Este numero não está no conjunto")
+		if Conjunto[i] == n1 {
+			pertence = true
 		}
+	}
+	if pertence {
+		fmt.Println("Este número pertence ao conjunto")
+	} else {
+		fmt.Println("Este numero não está no conjunto")
 	}
 }
