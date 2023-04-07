@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+	var Conjunto = [7]int{}
+	var n1 int
+
+	fmt.Println("Seu conjunto é ", Conjunto)
+	fmt.Println("Que número você quer add no primeiro e último elemento? ")
+	fmt.Scan(&n1)
+	Conjunto[0] = n1
+	Conjunto[6] = n1
+	fmt.Println(Conjunto)
+}
