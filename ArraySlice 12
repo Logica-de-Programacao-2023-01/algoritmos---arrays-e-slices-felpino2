@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	var Conjunto = [5]int{1, 2, 3, 6, 9}
+	var Conjunto2 = []int{}
+
+	fmt.Println("Seu conjunto é ", Conjunto)
+
+	for _, n1 := range Conjunto {
+		if n1%3 == 0 {
+			Conjunto2 = append(Conjunto2, n1)
+		}
+	}
+	fmt.Println("Os múltiplos de três são ", Conjunto2)
+}
