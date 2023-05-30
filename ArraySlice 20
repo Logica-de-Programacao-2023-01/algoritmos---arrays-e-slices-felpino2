@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	Crescente := false
+	var Conjunto = [5]int{1, 2, 3, 6, 9}
+	for i := 0; i < len(Conjunto)-1; i++ {
+		if Conjunto[i+1] > Conjunto[i] {
+			Crescente = true
+		}
+	}
+
+	if Crescente == true {
+		fmt.Print("Crescente")
+	}
+}
