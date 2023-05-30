@@ -1,0 +1,22 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	slice := []int{1, 3, 7, 8, 2, 0, -1, 9}
+	var n1 int
+	var n2 int
+	fmt.Println(slice, "Qual número você quer índice você quer trocar de posição? ")
+	fmt.Scan(&n1)
+	fmt.Println("Com qual? ")
+	fmt.Scan(&n2)
+	x := slice[n1]
+	if n1 >= 8 || n2 >= 8 || n1 < 0 || n2 < 0 {
+		fmt.Print("Erro no indice")
+	}
+	slice[n1] = slice[n2]
+	slice[n2] = x
+	fmt.Println(slice)
+}
