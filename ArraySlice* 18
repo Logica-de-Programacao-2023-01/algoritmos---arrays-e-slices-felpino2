@@ -1,0 +1,29 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var n int
+	slice := []int{}
+	i := 2
+	var primo bool
+	fmt.Print("Quantos números primos você quer ver? ")
+	fmt.Scan(&n)
+	for n > len(slice) {
+		primo = true
+		for j := 2; j < i; j++ {
+			if i%j == 0 {
+				primo = false
+				break
+			}
+		}
+		if primo {
+			slice = append(slice, i)
+		}
+		i++
+	}
+
+	fmt.Println(slice)
+}
