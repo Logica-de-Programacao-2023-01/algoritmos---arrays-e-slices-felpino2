@@ -1,0 +1,17 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	array := [10]int{0, 2, 4, 6, 8, 12, 7, 8, 10, 11}
+	slice := []int{}
+	for i := 0; i < len(array); i++ {
+		if array[i]%2 == 0 {
+			slice = append(slice, array[i])
+		}
+	}
+
+	fmt.Println(slice)
+}
