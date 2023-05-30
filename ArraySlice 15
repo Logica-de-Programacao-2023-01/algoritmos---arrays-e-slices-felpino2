@@ -1,0 +1,17 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	array := [10]float64{0.0, 2.3, 2.5, 2, 6, 3, 7.5, 8, 10, 11}
+	slice := []float64{}
+	for i := 0; i < len(array); i++ {
+		if array[i] > 5 {
+			slice = append(slice, array[i])
+		}
+	}
+
+	fmt.Println(slice)
+}
