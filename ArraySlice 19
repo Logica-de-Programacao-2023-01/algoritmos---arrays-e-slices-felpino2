@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+func main() {
+	var Conjunto = [5]int{1, 2, 3, 6, 9}
+	var Conjunto2 = [5]int{4, 5, 6, 7, -9}
+	var ConjuntoSoma = [5]int{}
+	for i := 0; i < len(Conjunto); i++ {
+		ConjuntoSoma[i] = Conjunto[i] + Conjunto2[i]
+	}
+	fmt.Print(ConjuntoSoma)
+}
